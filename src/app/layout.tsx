@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./styles/globals.css";
 
 import { Metadata } from "next/types";
 import { Space_Grotesk } from "next/font/google";
