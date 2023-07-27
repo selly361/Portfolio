@@ -1,4 +1,4 @@
-import { Document, Schema, model } from "mongoose"
+import { Document, Schema, model, models } from "mongoose"
 
 interface TechStackDocument extends Document {
   languages: string[]
@@ -15,6 +15,6 @@ const TechStackSchema = new Schema<TechStackDocument>({
 
 })
 
-const TechStackModel = model<TechStackDocument>("TechStack", TechStackSchema)
+const TechStack = models.TechStack || model<TechStackDocument>("TechStack", TechStackSchema)
 
-export default TechStackModel
+export default TechStack

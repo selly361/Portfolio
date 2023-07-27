@@ -1,4 +1,4 @@
-import { Document, Schema, model } from "mongoose"
+import { Document, Schema, model, models } from "mongoose"
 
 interface ProjectDocument extends Document {
     title: string
@@ -18,6 +18,6 @@ const ProjectSchema = new Schema<ProjectDocument>({
   liveDemoUrl: { type: String }
 })
 
-const Project = model("Project", ProjectSchema)
+const Project = models.Project || model("Project", ProjectSchema)
 
 export default Project
