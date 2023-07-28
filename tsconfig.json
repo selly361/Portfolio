@@ -22,7 +22,8 @@
     "paths": {
       "components": ["./src/components"],
       "models": ["./src/models"],
-      "libs": ["./src/libs"]
+      "libs": ["./src/libs"],
+      "icons": ["./src/app/icons"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
