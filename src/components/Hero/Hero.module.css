@@ -1,0 +1,54 @@
+.hero {
+  padding: 32px 48px 0;
+}
+
+
+.article {
+  width: 700px;
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+
+
+.article > h2 {
+    height: 50px;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 56px;
+    width: max-content;
+    max-width: 100%;
+    background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button {
+  height: 40px;
+  width: 164px;
+  border-radius: 10rem;
+  margin-top: 24px;
+  background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+  color: white;
+  font-weight: 600;
+  position: relative;
+
+}
+
+.button::before  {
+  content: "";
+  height: 40px;
+  width: 0px;
+  border-radius: 10rem;
+  position: absolute;
+  background-color: black;
+  opacity: 0.4;
+  inset: 0;
+}
+
+
+.button:hover::before {
+  transition: 1s ease width, .9s ease opacity;
+  width: 164PX;;
+  opacity: 0;
+}
