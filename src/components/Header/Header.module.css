@@ -1,0 +1,73 @@
+.header {
+  width: 90vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 80px;
+  justify-content: space-between;
+  animation: init-header-slide 1000ms ease-in forwards;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.header__nav a:hover {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.5) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.5) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: link-hover-shine 2s forwards;
+  animation-iteration-count: infinite;
+}
+
+.header__nav_icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+
+.header path {
+    transition: .5s ease fill;
+}
+
+
+.github_icon path {
+    fill: white;
+}
+
+.linkedIn_icon path {
+    fill: white;
+}
+
+@keyframes init-header-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes link-hover-shine {
+  0% {
+    -webkit-mask-position: 150%;
+    mask-position: 150%;
+  }
+  100% {
+    -webkit-mask-position: -50%;
+    mask-position: -50%;
+  }
+}
+
+
