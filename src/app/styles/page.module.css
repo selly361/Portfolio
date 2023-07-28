@@ -1,8 +1,5 @@
 .main {
-
+  width: 95vw;
+  margin: auto;
 }
 
-
-.backgroundAnimation {
-  position: absolute;
-}

@@ -10,23 +10,34 @@ html {
 }
 
 body {
-  background-color: #0F1624;
+  background-color: #0f1624;
+  color: hsl(204, 23.8%, 95.9%);
 }
-
 
 input,
 fieldset,
 button {
-    border: unset;
-    outline: unset;
+  border: unset;
+  outline: unset;
 }
 
+button,
+a {
+  cursor: pointer;
+}
 
+p,
+a,
 button {
-    cursor: pointer;
+  font-weight: 400;
+  color: #bebebe;
+  font-size: 18px;
 }
 
-
+a {
+  link-style: none;
+  text-decoration: none;
+}
 
 .BgAnimation__svg {
   position: absolute;
@@ -34,4 +45,5 @@ button {
   height: 600px;
   top: 0;
   right: 100px;
+  z-index: -2;
 }
