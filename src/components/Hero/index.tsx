@@ -16,7 +16,7 @@ function Hero() {
         <p>Hello, I'm Seikou 👋🏻</p>
         <h2>A {text} Developer</h2>
         <p>
-          &#8212;with a passion for crafting captivating experiences and a
+        —with a passion for crafting captivating experiences and a
           commitment to embracing new technologies.
         </p>
         <button className={styles.button}>Portfolio</button>
