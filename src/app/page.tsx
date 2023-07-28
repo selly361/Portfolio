@@ -1,14 +1,13 @@
 // "use client"
 
-import { BackgroundAnimation } from "components"
+import { Hero } from "components"
 import Image from "next/image"
 import styles from './styles/page.module.css'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <BackgroundAnimation />
-      <h1>Home Page</h1>
+      <Hero />
     </main>
   )
 }

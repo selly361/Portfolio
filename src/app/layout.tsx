@@ -1,5 +1,6 @@
 import "./styles/globals.css";
 
+import { Header } from "components";
 import { Metadata } from "next/types";
 import { Space_Grotesk } from "next/font/google";
 
@@ -21,7 +22,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={SpaceGrotesk.className}>{children}</body>
+      <body className={SpaceGrotesk.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
